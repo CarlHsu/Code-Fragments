@@ -11,3 +11,7 @@ for (var i = 0, type; type = ['String', 'Array', 'Number'][i++];) {
         }
     }(type))
 }
+
+// for 语句赋值数组长度判断条件给变量
+var ary = []
+for (var i = 0, l = ary.length; i < l; ++i) { }
