@@ -38,15 +38,6 @@ var jsonToQueryString = function (json) {
     }).join('&')
 }
 
-// http://www.alloyteam.com/2012/10/common-javascript-design-patterns/
-// 单例模式
-var singleton = function (fn, thisArg) {
-    var rslt
-    return function () {
-        return rslt || (rslt = fn.apply(thisArg, arguments))
-    }
-}
-
 // Javascript 设计模式与开发实践 3.1.3
 // 上报数据（跨域）
 var report = (function () {
